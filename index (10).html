@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X Tudo Fashion</title>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2405633666594736');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2405633666594736&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink:    #FF0E5A;
+      --red:     #FF3B1A;
+      --grad:    linear-gradient(135deg, #FF0E5A 0%, #FF3B1A 100%);
+      --dark:    #1A0A0E;
+      --dark2:   #2E1018;
+      --white:   #FFFFFF;
+      --offwhite:#FFF5F7;
+      --muted:   rgba(255,255,255,0.6);
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      background: var(--dark);
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── BANNER ── */
+    .banner {
+      width: 100%;
+      background: var(--grad);
+      color: #fff;
+      text-align: center;
+      padding: 11px 20px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── TOPO / LOGO ── */
+    .top {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 44px 24px 28px;
+      gap: 18px;
+    }
+
+    .logo-ring {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      padding: 3px;
+      background: var(--grad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-ring img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--dark);
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .brand-name span {
+      font-style: italic;
+      font-weight: 500;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+      max-width: 300px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--grad);
+      border-radius: 2px;
+    }
+
+    /* ── BOTÕES ── */
+    .links {
+      width: 100%;
+      max-width: 480px;
+      padding: 8px 22px 52px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 17px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn:active { transform: scale(0.97); }
+
+    .btn-fill {
+      background: var(--grad);
+      color: #fff;
+      box-shadow: 0 4px 24px rgba(255,14,90,0.4);
+    }
+    .btn-fill:hover {
+      box-shadow: 0 6px 30px rgba(255,14,90,0.55);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.2);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,14,90,0.6);
+      background: rgba(255,14,90,0.08);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      width: 100%;
+      max-width: 480px;
+      padding: 20px 22px 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-text {
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      text-align: center;
+    }
+
+    /* ── ANIMAÇÕES ── */
+    @keyframes up {
+      from { opacity:0; transform:translateY(16px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .banner       { animation: up .4s ease both; }
+    .top          { animation: up .5s .08s ease both; }
+    .btn:nth-of-type(1) { animation: up .4s .25s ease both; }
+    .btn:nth-of-type(2) { animation: up .4s .32s ease both; }
+    .footer       { animation: up .4s .52s ease both; }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER -->
+  <div class="banner">Compre direto de Fábrica</div>
+
+  <!-- TOPO -->
+  <div class="top">
+    <div class="logo-ring">
+      <img src="logo.jpg" alt="X Tudo Fashion"/>
+    </div>
+    <div class="brand-name">X Tudo <span>Fashion</span></div>
+    <div class="divider"></div>
+    <p class="tagline">Fabricamos só o que está em alta.<br>Tendência com giro garantido.</p>
+  </div>
+
+  <!-- LINKS -->
+  <div class="links">
+
+    <!-- Atendimento Online -->
+    <a href="https://api.whatsapp.com/send?phone=558587424276" class="btn btn-fill">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.828L.057 23.5a.5.5 0 00.602.602l5.688-1.456A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.669-.52-5.187-1.427l-.372-.22-3.853.988.997-3.736-.242-.386A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      Atendimento Online
+    </a>
+
+    <!-- Grupo VIP -->
+    <a href="https://chat.whatsapp.com/Jk2CXGrlvvQCmjrBpYsjS9" class="btn btn-ghost">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.099 1.51 5.828L.057 23.5a.5.5 0 00.602.602l5.688-1.456A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.669-.52-5.187-1.427l-.372-.22-3.853.988.997-3.736-.242-.386A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      Grupo VIP
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-text">X Tudo Fashion · Moda Feminina · Fabricação Própria</p>
+  </div>
+
+</body>
+</html>
